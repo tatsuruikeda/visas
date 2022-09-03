@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rr:ResultsReport xmlns:rr="http://integration.foundationmedicine.com/reporting" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://integration.foundationmedicine.com/reporting http://integration.foundationmedicine.com/reporting/ResultsReport.2.1.xsd">
+  <rr:CustomerInformation>
+    <rr:ReferenceID>04-2020-00800002</rr:ReferenceID>
+    <rr:CSN />
+    <rr:TRF>ORD-0758162-01</rr:TRF>
+    <rr:MRN />
+    <rr:PhysicianId>77171</rr:PhysicianId>
+    <rr:NPI>International</rr:NPI>
+  </rr:CustomerInformation>
+  <rr:ResultsPayload>
+    <variant-report xmlns="http://foundationmedicine.com/compbio/variant-report-external" disease="PANCREAS" disease-ontology="Pancreas ductal adenocarcinoma" flowcell-analysis="2000008497" gender="male" pathology-diagnosis="D - Pancreas ductal adenocarcinoma/S - Pancreas" percent-tumor-nuclei="40" pipeline-version="v3.3.15" purity-assessment="18.3" specimen="ORD-0758162-01*US0752601.01" study="Chugai Commercial F1CDx" test-request="ORD-0758162-01" test-type="FoundationOneDx" tissue-of-origin="Pancreas" xsi:schemaLocation="http://foundationmedicine.com/compbio/variant-report-external http://integration.foundationmedicine.com/reporting/variant-report-external-2.2.xsd">
+      <samples>
+        <sample bait-set="DX1" mean-exon-depth="978.1" name="SQ-US0752601.01-1" nucleic-acid-type="DNA" />
+      </samples>
+      <quality-control status="Pass" />
+      <short-variants>
+        <short-variant allele-fraction="0.3357" cds-effect="511G&gt;T" depth="1254" equivocal="false" functional-effect="missense" gene="POLD1" percent-reads="33.57" position="chr19:50905303" protein-effect="A171S" status="unknown" strand="+" transcript="NM_002691">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.25" cds-effect="35G&gt;T" depth="892" equivocal="false" functional-effect="missense" gene="KRAS" percent-reads="25.0" position="chr12:25398284" protein-effect="G12V" status="known" strand="-" transcript="NM_004985">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.1728" cds-effect="952G&gt;A" depth="787" equivocal="false" functional-effect="missense" gene="RNF43" percent-reads="17.28" position="chr17:56437510" protein-effect="E318K" status="unknown" strand="-" transcript="NM_017763">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.2105" cds-effect="722C&gt;T" depth="879" equivocal="false" functional-effect="missense" gene="TP53" percent-reads="21.05" position="chr17:7577559" protein-effect="S241F" status="known" strand="-" transcript="NM_000546">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.5205" cds-effect="1379A&gt;G" depth="1368" equivocal="false" functional-effect="missense" gene="PALB2" percent-reads="52.05" position="chr16:23646488" protein-effect="Q460R" status="unknown" strand="-" transcript="NM_024675">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.5092" cds-effect="260G&gt;A" depth="1037" equivocal="false" functional-effect="missense" gene="MYCL1" percent-reads="50.92" position="chr1:40366937" protein-effect="G87E" status="unknown" strand="-" transcript="NM_005376">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.5915" cds-effect="2519G&gt;A" depth="710" equivocal="false" functional-effect="missense" gene="NOTCH3" percent-reads="59.15" position="chr19:15295153" protein-effect="G840E" status="unknown" strand="-" transcript="NM_000435">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.5941" cds-effect="1556G&gt;A" depth="988" equivocal="false" functional-effect="missense" gene="RNF43" percent-reads="59.41" position="chr17:56435581" protein-effect="R519Q" status="unknown" strand="-" transcript="NM_017763">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.5042" cds-effect="2437G&gt;C" depth="1180" equivocal="false" functional-effect="missense" gene="LTK" percent-reads="50.42" position="chr15:41796352" protein-effect="E813Q" status="unknown" strand="-" transcript="NM_002344">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.4971" cds-effect="11729_11734delAGCAAC" depth="1209" equivocal="false" functional-effect="nonframeshift" gene="MLL2" percent-reads="49.71" position="chr12:49426753" protein-effect="Q3910_Q3911del" status="known" strand="-" transcript="NM_003482">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.1567" cds-effect="1693T&gt;G" depth="1206" equivocal="false" functional-effect="missense" gene="NFE2L2" percent-reads="15.67" position="chr2:178095638" protein-effect="F565V" status="unknown" strand="-" transcript="NM_006164">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.2008" cds-effect="1546C&gt;T" depth="1021" equivocal="false" functional-effect="nonsense" gene="SMAD4" percent-reads="20.08" position="chr18:48604724" protein-effect="Q516*" status="known" strand="+" transcript="NM_005359">
+          <dna-evidence sample="SQ-US0752601.01-1" />
+        </short-variant>
+      </short-variants>
+      <copy-number-alterations>
+        <copy-number-alteration copy-number="0" equivocal="false" gene="CDKN2B" number-of-exons="5 of 5" position="chr9:22002170-22010784" ratio="0.81" status="known" type="loss" />
+        <copy-number-alteration copy-number="0" equivocal="false" gene="CDKN2A" number-of-exons="5 of 5" position="chr9:21968169-21994453" ratio="0.78" status="known" type="loss" />
+        <copy-number-alteration copy-number="0" equivocal="false" gene="MTAP" number-of-exons="8 of 8" position="chr9:21802699-21862058" ratio="0.72" status="known" type="loss" />
+      </copy-number-alterations>
+      <rearrangements />
+      <biomarkers>
+        <microsatellite-instability status="MSS" />
+        <tumor-mutation-burden score="2.52" status="low" unit="mutations-per-megabase" />
+      </biomarkers>
+      <non-human-content />
+    </variant-report>
+  </rr:ResultsPayload>
+</rr:ResultsReport>

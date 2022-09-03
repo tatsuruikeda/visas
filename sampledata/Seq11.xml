@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rr:ResultsReport xmlns:rr="http://integration.foundationmedicine.com/reporting" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://integration.foundationmedicine.com/reporting http://integration.foundationmedicine.com/reporting/ResultsReport.2.1.xsd">
+  <rr:CustomerInformation>
+    <rr:ReferenceID>04-2020-00800001</rr:ReferenceID>
+    <rr:CSN />
+    <rr:TRF>ORD-0758142-01</rr:TRF>
+    <rr:MRN />
+    <rr:PhysicianId>77168</rr:PhysicianId>
+    <rr:NPI>International</rr:NPI>
+  </rr:CustomerInformation>
+  <rr:ResultsPayload>
+    <variant-report xmlns="http://foundationmedicine.com/compbio/variant-report-external" disease="SOFT TISSUE" disease-ontology="Soft tissue liposarcoma" flowcell-analysis="2000008512" gender="female" pathology-diagnosis="D - Soft tissue liposarcoma/S - Parotid gland" percent-tumor-nuclei="80" pipeline-version="v3.3.15" purity-assessment="76.9" specimen="ORD-0758142-01*US0752582.01" study="Chugai Commercial F1CDx" test-request="ORD-0758142-01" test-type="FoundationOneDx" tissue-of-origin="Parotid Gland" xsi:schemaLocation="http://foundationmedicine.com/compbio/variant-report-external http://integration.foundationmedicine.com/reporting/variant-report-external-2.2.xsd">
+      <samples>
+        <sample bait-set="DX1" mean-exon-depth="974.68" name="SQ-US0752582.01-1" nucleic-acid-type="DNA" />
+      </samples>
+      <quality-control status="Pass" />
+      <short-variants>
+        <short-variant allele-fraction="0.4898" cds-effect="986T&gt;C" depth="1080" equivocal="false" functional-effect="missense" gene="MST1R" percent-reads="48.98" position="chr3:49940057" protein-effect="V329A" status="unknown" strand="-" transcript="NM_002447">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.3559" cds-effect="600G&gt;C" depth="1093" equivocal="false" functional-effect="missense" gene="PARP3" percent-reads="35.59" position="chr3:51978892" protein-effect="E200D" status="unknown" strand="+" transcript="NM_005485">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.4961" cds-effect="2339T&gt;C" depth="776" equivocal="false" functional-effect="missense" gene="EP300" percent-reads="49.61" position="chr22:41545139" protein-effect="I780T" status="unknown" strand="+" transcript="NM_001429">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.1334" cds-effect="2872C&gt;G" depth="1289" equivocal="false" functional-effect="missense" gene="KDM6A" percent-reads="13.34" position="chrX:44937684" protein-effect="Q958E" status="unknown" strand="+" transcript="NM_021140">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.1973" cds-effect="955G&gt;A" depth="223" equivocal="false" functional-effect="missense" gene="ARID1A" percent-reads="19.73" position="chr1:27023849" protein-effect="G319R" status="unknown" strand="+" transcript="NM_006015">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.4922" cds-effect="2009T&gt;G" depth="1087" equivocal="false" functional-effect="missense" gene="MST1R" percent-reads="49.22" position="chr3:49934990" protein-effect="V670G" status="unknown" strand="-" transcript="NM_002447">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.0955" cds-effect="2425T&gt;A" depth="1382" equivocal="false" functional-effect="missense" gene="MLL" percent-reads="9.55" position="chr11:118344299" protein-effect="S809T" status="unknown" strand="+" transcript="NM_005933">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.4517" cds-effect="696_704delCTTGGAGGC" depth="1076" equivocal="false" functional-effect="nonframeshift" gene="PARP3" percent-reads="45.17" position="chr3:51979074" protein-effect="A235_E237del" status="unknown" strand="+" transcript="NM_005485">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.4837" cds-effect="118G&gt;A" depth="1042" equivocal="false" functional-effect="missense" gene="RARA" percent-reads="48.37" position="chr17:38487588" protein-effect="A40T" status="unknown" strand="+" transcript="NM_000964">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.5907" cds-effect="449T&gt;C" depth="1114" equivocal="false" functional-effect="missense" gene="AXL" percent-reads="59.07" position="chr19:41727824" protein-effect="V150A" status="unknown" strand="+" transcript="NM_001699">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+        <short-variant allele-fraction="0.5131" cds-effect="1567A&gt;G" depth="1027" equivocal="false" functional-effect="missense" gene="MAP3K13" percent-reads="51.31" position="chr3:185184675" protein-effect="I523V" status="unknown" strand="+" transcript="NM_004721">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </short-variant>
+      </short-variants>
+      <copy-number-alterations>
+        <copy-number-alteration copy-number="34" equivocal="false" gene="CDK4" number-of-exons="7 of 7" position="chr12:58130118-58188144" ratio="14.42" status="known" type="amplification">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </copy-number-alteration>
+        <copy-number-alteration copy-number="37" equivocal="false" gene="MDM2" number-of-exons="11 of 11" position="chr12:69153996-69277205" ratio="15.67" status="known" type="amplification">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </copy-number-alteration>
+        <copy-number-alteration copy-number="7" equivocal="true" gene="AKT2" number-of-exons="13 of 13" position="chr19:40701261-40791492" ratio="3.05" status="known" type="amplification">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </copy-number-alteration>
+      </copy-number-alterations>
+      <rearrangements>
+        <rearrangement description="MDM2(NM_002392) rearrangement exon 11" equivocal="false" in-frame="unknown" other-gene="N/A" pos1="chr12:69233215-69233631" pos2="chr12:75839663-75840068" status="unknown" supporting-read-pairs="402" targeted-gene="MDM2" type="rearrangement">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </rearrangement>
+        <rearrangement description="KDM6A(NM_021140)-MGAT4C(NM_013244) fusion (K19; M4)" equivocal="false" in-frame="unknown" other-gene="MGAT4C" pos1="chrX:44937525-44937796" pos2="chr12:86443316-86443573" status="likely" supporting-read-pairs="69" targeted-gene="KDM6A" type="truncation">
+          <dna-evidence sample="SQ-US0752582.01-1" />
+        </rearrangement>
+      </rearrangements>
+      <biomarkers>
+        <microsatellite-instability status="MSS" />
+        <tumor-mutation-burden score="2.52" status="low" unit="mutations-per-megabase" />
+      </biomarkers>
+      <non-human-content />
+    </variant-report>
+  </rr:ResultsPayload>
+</rr:ResultsReport>
