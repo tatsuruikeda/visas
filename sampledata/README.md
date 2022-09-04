@@ -7,7 +7,6 @@ Copy the directory containing xml files (e.g., data) to the container.
 $ docker cp /Users/xxxxx/data variant:/
 ```
 
-
 Make this directory the current directory.
 
 ``` 
@@ -22,4 +21,6 @@ $ get_labels.sh | get_variants.sh > seq.txt
 $ get_circles.r seq.txt out
 ```
 
+
+![](./algorithms2.png)
 
