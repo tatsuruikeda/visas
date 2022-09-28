@@ -10,7 +10,11 @@ $ docker run --name visas -it --rm buildandshipany/visas /bin/bash
 ```
 デタッチ後 (キーボードでCtrl-p押した後Ctrl-q押す)， FoundationOneCDx xml ファイルを含むディレクトリをコンテナにコピーする
 ```
-$ docker cp /Users/<path to a data dir> visas:/
+(Mac)
+$ docker cp /Users/<ユーザ名>/<ディレクトリへのパス> visas:/home/docker
+
+(Windows)
+$ docker cp C:¥Users¥<ユーザ名>¥<ディレクトリへのパス> visas:/home/docker
 ```
 
 コンテナの接続
@@ -19,10 +23,10 @@ $ docker cp /Users/<path to a data dir> visas:/
 # docker exec -it visas /bin/bash
 ```
 
-カレントディレクトリの変更
+カレントディレクトリをコピーしたディレクトリ（dataとする）に変更
 
 ``` 
-# cd data
+# cd /home/docker/data
  ```
 
 
@@ -38,9 +42,9 @@ $ docker cp /Users/<path to a data dir> visas:/
 ```
 # trimming_png.sh
 ```
-デタッチ後 (Ctrl-p，Ctrl-q)，データディレクトリを ローカルにコピーする．コンテナに残ったディレクトリを削除する．
+デタッチ後 (Ctrl-p，Ctrl-q)，データディレクトリを ローカルにコピーする（パスはMacの例）．コンテナに残ったディレクトリを削除する．
 ```
-$ docker cp visas:/data /Users/<path to a dir>
+$ docker cp visas:/home/docker/data /Users/<ユーザ名>/Documents
 $ rm -R data
 ```
 
