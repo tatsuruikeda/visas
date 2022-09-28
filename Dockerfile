@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y libxml2-dev \
 
 COPY ./cmd /usr/local/cmd
 
-COPY ./sampledata /home/docker/sampledata
+COPY ./sampledata /sampledata
 
 COPY ./README.md /
 
