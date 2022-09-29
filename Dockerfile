@@ -7,7 +7,7 @@ COPY ./cmd /usr/local/cmd
 
 COPY ./sampledata /sampledata
 
-COPY ./README_JPN.md /
+COPY ./README.md /
 
 ENV PATH /usr/local/cmd:$PATH
 

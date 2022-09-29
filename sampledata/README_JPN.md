@@ -52,15 +52,15 @@ $ rm -R data
 ## カラーサークルにおける各アルゴリズムの並び方 ##
 
 
-最上段
+上段（左から右）
 
  clinpred/	 bayesdel/ 	 revel/	 mutpred/	 mvp/	 m-cap/	 eigen-pc/	 metasvm/	 metalr/	 dann/	 genocanyon		
 
- 中段
+中段（左から右）
 
  primateai/	 phylo_p100way/	 list-s2/	 gerp/ siphy_29way/	 phastcons_100way/	 phastcons_30way/	 phastcons_17way/	 phylo_p30way/	 phylo_p17way/	 metarnn
 
- 最下段	
+下段（左から右）	
 
 vest4/	 provean/	 deogen2/	 sift4g/	 sift/	 fathmm-xf/	 polyphen2/	 mutationassessor/	 mutationtaster/	 lrt/	 mpc/	 fathmm-mkl/	 fathmm
 
