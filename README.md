@@ -38,7 +38,7 @@ To Execute command-lines allows you to obtain color circle png files and a out.c
 
 ```
 # get_labels.sh | get_variants.sh > seq.txt
-# get_circles.r seq.txt out
+# get_circles.r seq.txt out 2>/dev/null
 ```
 
 If you like to trimm figures, you can run this line
@@ -46,8 +46,6 @@ If you like to trimm figures, you can run this line
 ```
 # trimming_png.sh
 ```
-
-![KRAS](sampledata/KRAS.png) 
 
 
 # Color circles # 
