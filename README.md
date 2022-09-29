@@ -47,7 +47,7 @@ If you like to trimm figures, you can run this line
 # trimming_png.sh
 ```
 
-![KRAS](/sampledata/KRAS.png) 
+![KRAS](sampledata/KRAS.png) 
 
 
 # Color circles # 
