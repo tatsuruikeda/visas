@@ -76,7 +76,7 @@ for ( i in 1:nrow(data)){
     annotate("text",x=1, y=0.9, label="0") +
     annotate("text",x=15, y=1.16, label="10")+
   　annotate("text",x=8, y=1.20, label=data[i,2], size=6)
-  ggsave(filename=paste("figs/", data[i,3], data[i,2], ".png", sep=" "), width=5.8, height=5.3, units="in", dpi=300) 
+  ggsave(filename=paste("figs/", data[i,3], "_", data[i,2], ".png", sep=""), width=5.8, height=5.3, units="in", dpi=300) 
 }
 
 variant.df <- data.frame(variantmatrix)
