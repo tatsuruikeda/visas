@@ -9,6 +9,7 @@
 $ docker run --name visas -it --rm buildandshipany/visas /bin/bash
 ```
 デタッチ後 (キーボードでCtrl-p押した後Ctrl-q押す)， FoundationOneCDx xml ファイルを含むディレクトリをコンテナにコピーする
+（ボリュームをマウントする方法もありますが略）．
 ```
 (Mac)
 $ docker cp /Users/<ユーザ名>/<ディレクトリへのパス> visas:/
@@ -23,7 +24,7 @@ $ docker cp C:¥Users¥<ユーザ名>¥<ディレクトリへのパス> visas:/
 # docker exec -it visas /bin/bash
 ```
 
-カレントディレクトリをコピーしたディレクトリ（dataとする）に変更
+カレントディレクトリをコピーしたディレクトリ（dataとする）に変更．
 
 ``` 
 # cd data
