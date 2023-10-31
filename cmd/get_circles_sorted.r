@@ -5,11 +5,9 @@ library(ggplot2)
 
 args <- commandArgs(trailingOnly=TRUE)  #引数受け取り  
 data <- read.table(args[1])
-var.names <- c("case", "gene", "vest4", "provean", "deogen2", "sift4g", "sift", "fathmm-xf", "polyphen2", "mutationassessor",
-               "mutationtater", "lrt", "mpc", "fathmm_mkl", "fathmm", "primateai", "phylo_p100way", "list-s2", 
-               "gerp", "siphy_29way", "phastcons_100way", "phastcons_30way", "phastcons_17way", "phylo_p30way", "phylo_p17way", 
-               "metaRNN", "clinpred", "bayesdel", "revel", "mutpred", "mvp", "m-cap", "eigen-pc",
-              "metasvm", "metalr", "dann", "genocanyon")
+var.names <- c("case", "gene", "lrt", "fathmm_mkl", "dann", "siphy_29way","gerp","phastcons_100way","fathmm","genocanyon","phastcons_30way","phylo_p30way", 
+               "phastcons_17way", "phylo_p17way", "primateai", "fathmm-xf", "metasvm", "mutationassessor","polyphen2", "metalr", "m-cap","mpc","sift","mutationtater", 
+               "phylo_p100way","list-s2", "clinpred", "metaRNN", "bayesdel", "vest4","revel","mutpred", "mvp","deogen2", "provean", "eigen-pc", "sift4g")
 
 variantmatrix <- matrix(numeric(37*nrow(data)), nrow=nrow(data), ncol=37)
 
@@ -52,30 +50,28 @@ for ( i in 1:nrow(data)){
     ak <- ifelse (is.null(variant[[1]]$dbnsfp$clinpred$rankscore)==TRUE, NA, variant[[1]]$dbnsfp$clinpred$rankscore)
     al <- ifelse (is.null(variant[[1]]$dbnsfp$'list-s2'$rankscore)==TRUE, NA, variant[[1]]$dbnsfp$'list-s2'$rankscore)
     am <- ifelse (is.null(variant[[1]]$dbnsfp$metarnn$rankscore)==TRUE, NA, variant[[1]]$dbnsfp$metarnn$rankscore)
-    variantList1 <<- c(w, t, c, v, u, f, s, q, r, x, k, e, y, n, ad, al, ah, ag, aa, ab, ac, af, ae, am, ak, ai, p, l, m, h, d, j, i, b, g)
+    variantList1 <<- c(x, e, b, ag, ah, aa, y, g, ab, af, ac, ae, n, f, j, q, s, i, h, k, u, r, al, ad, ak, am, ai, w, p, l, m, c, t, d, v)
   }
   
   c_palette <- c("#FFFFFF","#000099", "#333399","#6666CC", "#6699CC", "#99CCFF", "#FFFF00", "#FFCC00", "#FF6633", "#FF3300", "#FF3333", "#FF0000")
   
   variant <- getVariant(data[i,1])
   variantFunction()
-  variantmatrix[i,]<- c(data[i,3], data[i,2], variantList1)
+  variantmatrix[i,]<- c(data[i,2], data[i,3], data[i,4], data[i,5], variantList1)
   
   x <- replace(variantList1, which(is.na(variantList1)), -0.1) # NA-> -0.1
-  variantList1 <- c(-0.1,0,x, 1)
+  variantList1 <- c(-0.1,x)
   
-  
-  variantdf <- data.frame(xval=c(0.1,1, c(2:14), c(2:12), c(2:12),15), 
-                          yval=c(0.95, 0.95,rep(1,13), rep(1.05,11), rep(1.1,11),1.1), score=round(variantList1*10))
-  p <- ggplot(variantdf, aes(x=xval, y=yval, fill=score)) + geom_point(shape=21, colour="black", size=7)
+  x_seq <- seq(2, 5, length.out = 12)
+  variantdf <- data.frame(xval=c(1,x_seq[1:12],x_seq[1:12],x_seq[1:11]),
+                          yval=c(1,rep(1,12), rep(1.06,12), rep(1.12,11)), score=round(variantList1*10))
+  p <- ggplot(variantdf, aes(x=xval, y=yval, fill=score)) + geom_point(shape=21, colour="black", size=9) # original z=7
   p + scale_fill_gradientn(colours = c_palette) + ylim(0.5,1.5) + theme_classic() +
     theme(axis.text.x = element_blank(),axis.text.y = element_blank()) + 
     theme(axis.title.x = element_blank(), axis.title.y = element_blank()) + 
     theme(axis.ticks = element_blank(), axis.text.y = element_blank()) +
-    annotate("text",x=0.1, y=0.95, label="NA") +
-    annotate("text",x=1, y=0.9, label="0") +
-    annotate("text",x=15, y=1.16, label="10")+
-  　annotate("text",x=8, y=1.20, label=data[i,2], size=6)
+    theme(legend.position = "none") +
+  　annotate("text",x=3.5, y=1.20, label=data[i,2], size=6)
   ggsave(filename=paste("figs/", data[i,3], "_", data[i,2], ".png", sep=""), width=5.8, height=5.3, units="in", dpi=300) 
 }
 
@@ -83,4 +79,3 @@ variant.df <- data.frame(variantmatrix)
 colnames(variant.df) <- var.names
 x <- as.matrix(variant.df)
 write.csv(x, paste("./figs/", args[2], ".csv", sep=""))
-
