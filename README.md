@@ -25,13 +25,13 @@ $ docker run --name visas -it -v /mnt/c/Users/YourUsername/xmldata:/mnt buildand
 ---
 ### 実行 ### 
 
-カレントディレクトリをxmlデータのあるディレクトリ（上の例ではxmldata）に変更する．また，sampledataディレクトリでも試行できる．
+カレントディレクトリをxmlデータのあるディレクトリ（上の例ではmnt）に変更する．また，sampledataディレクトリでも試行できる．
 
 ``` 
-# cd xmldata
+# cd mnt
 ```
 
-以下のコマンドラインによって各アルゴリズムスコアに対応するカラーサークルとcsvファイルが得られる．xmldata内に新しいディレクトリ「figs」が作成され，全てのデータはそこに格納される．
+以下のコマンドラインによって各アルゴリズムスコアに対応するカラーサークルとcsvファイルが得られる．mnt内に新しいディレクトリ「figs」が作成され，全てのデータはそこに格納される．
 
 ```
 get_circles.sh 
