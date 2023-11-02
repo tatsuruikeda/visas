@@ -57,7 +57,7 @@ for ( i in 1:nrow(data)){
   
   variant <- getVariant(data[i,1])
   variantFunction()
-  variantmatrix[i,]<- c(data[i,2], data[i,3], data[i,4], data[i,5], variantList1)
+  variantmatrix[i,]<- c(data[i,3], data[i,2], variantList1)
   
   x <- replace(variantList1, which(is.na(variantList1)), -0.1) # NA-> -0.1
   variantList1 <- c(-0.1,x)
